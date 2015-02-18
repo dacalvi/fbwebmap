@@ -1,6 +1,15 @@
 var map;
 
+var Markers_Config = {
+    atm_markers: "",
+    atm_markers_lenght: "",
 
+    branch_markers: "",
+    branch_markers_lenght: "",
+
+    tas_markers: "",
+    tas_markers_lenght: ""
+}
 
 var pos;
 var userMarker = null;
@@ -12,8 +21,8 @@ var directionsService = new google.maps.DirectionsService();
 var markersATMS = [];
 var markersBranches = [];
 var markersActive = '000';
-//Se coloca de manera relativa las carpetas
-var bundle_prefix = '/fbwebmap/assets/';
+//Se coloca de
+var bundle_prefix = '/assets/';
 
 var atm_image = bundle_prefix + '/img/atm.png';
 var branch_image = bundle_prefix + '/img/branch.png';

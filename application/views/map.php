@@ -13,16 +13,14 @@
     </style>
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
-    <script src="/assets/js/map.js"></script>
+    <script src="assets/js/map.js"></script>
   </head>
-
   <body>
     <div class="container-selection"><h4>¿Qué buscás?</h4>
      <div class="checkbox"><input id="branches" type="checkbox" name="check" value="branches"><label for="branches">
           <!-- <i class="fa fa-brand"></i> -->
         Sucursales
-      </label><br><input id="atms" type="checkbox" name="check" value="atms"><label for="atms">
-      <!-- <i class="fa fa-atm"></i> -->
+      </label><br><input id="atms" type="checkbox" name="check" value="atms"><label for="atms"><i class="fa fa-atm"></i>
         ATM's
       </label><br></div></div>
 

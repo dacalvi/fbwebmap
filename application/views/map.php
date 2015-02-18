@@ -14,7 +14,6 @@
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     <script src="/assets/js/map.js"></script>
-    <style type="text/css" src="/assets/css/main.css"></style>
   </head>
   <body>
     

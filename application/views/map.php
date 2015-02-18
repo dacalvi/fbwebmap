@@ -2,8 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Banco Regional</title>
-    <base href="<?=base_url();?>">
+    <title>Marker Animations</title>
     <style>
       html, body, #map-canvas {
         height: 100%;
@@ -16,13 +15,11 @@
     <script src="/assets/js/map.js"></script>
   </head>
   <body>
-    
     <div class="container-selection"><h4>¿Qué buscás?</h4><div class="checkbox"><input id="branches" type="checkbox" name="check" value="branches"><label for="branches"><i class="fa fa-brand"></i>
         Sucursales
       </label><br><input id="atms" type="checkbox" name="check" value="atms"><label for="atms"><i class="fa fa-atm"></i>
         ATM's
-      </label><br></div>
-    </div>
+      </label><br></div></div>
 
     <div id="map"></div>
     

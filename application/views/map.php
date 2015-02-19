@@ -4,35 +4,34 @@
     <meta charset="utf-8">
     <title>Banco Regional</title>
     <base href="<?=base_url();?>">
-    <style>
-      html, body, #map-canvas {
-        height: 100%;
-        margin: 0px;
-        padding: 0px
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" media="screen" />
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     <script src="assets/js/map.js"></script>
   </head>
+
   <body>
     <div class="container-selection"><h4>¿Qué buscás?</h4>
-     <div class="checkbox"><input id="branches" type="checkbox" name="check" value="branches"><label for="branches">
-          <!-- <i class="fa fa-brand"></i> -->
+     <div class="checkbox"><input id="branches" type="checkbox" name="check" value="branches">
+      <label for="branches"><i class="fa fa-brand"></i>
         Sucursales
-      </label><br><input id="atms" type="checkbox" name="check" value="atms"><label for="atms"><i class="fa fa-atm"></i>
-        ATM's
-      </label><br></div></div>
+      </label><br>
+      <input id="atms" type="checkbox" name="check" value="atms">
+      <label for="atms">
+          <i class="fa fa-atm"></i>
+              ATM's
+      </label><br>
+     </div>
+    </div>
 
     <div id="map"></div>
-    
+
     <script type="text/javascript">
-    $(document).ready(function () {
-      initialize();
-    });
+         $(document).ready(function () {
+           initialize();
+         });
     </script>
-
-
     <script type="text/javascript">
 $(document).ready(function () {
   var atm_content = {

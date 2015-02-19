@@ -21,6 +21,7 @@ var directionsService = new google.maps.DirectionsService();
 var markersATMS = [];
 var markersBranches = [];
 var markersActive = '000';
+var bundle_prefix = 'assets/';
 
 var bundle_prefix = '/assets/';
 

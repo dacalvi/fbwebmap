@@ -23,7 +23,7 @@ var markersBranches = [];
 var markersActive = '000';
 var bundle_prefix = 'assets/';
 
-var bundle_prefix = '/assets/';
+var bundle_prefix = 'assets/';
 
 var atm_image = bundle_prefix + 'img/atm.png';
 var branch_image = bundle_prefix + 'img/branch.png';

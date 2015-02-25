@@ -64,7 +64,7 @@ a:hover
 $(document).ready(function () {
   var atm_content = {
     "result":{
-          "atms":[<?php foreach ($data as $dato) : ?>
+          "atms":[<?php foreach ($datos as $dato) : ?>
                   {
           "titulo" : "<?php echo $dato['nombre'];?>",
           "latitud" : "<?php echo $dato['latitud'] ;?>",

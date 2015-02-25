@@ -14,9 +14,7 @@ class datos extends CI_Controller {
 
 	public function index()
 	{
-		$this->grocery_crud->set_table('datos');
-		$output = $this->grocery_crud->render();
-  		$this->_example_output($output);
+		$this->_example_output((object)array('output' => '' , 'js_files' => array() , 'css_files' => array()));
 	}
 	
 	function _example_output($output = null)
@@ -31,17 +29,24 @@ class datos extends CI_Controller {
 	{
 		$this->grocery_crud->set_table('datos');
 		$output = $this->grocery_crud->render();
+        $this->_example_output($output);
+		// se envia los datos de los sucursales con sus marcadores
+        $this->load->model('datos_model');
+	    $data["datos"]=$this->datos_model->obtener_datos();
+		$this->load->view('datos_edit', $data);
 
-		$this->_example_output($output);	  
+
+			  
 	}
 	
 
 
-    public function listar_datos(){
+         function listar_datos(){
 		$this->load->model('datos_model');
 	    $data["datos"]=$this->datos_model->obtener_datos();
-		$this->load->view('datos_edit', $data);
-//var_dump($this->datos_model->obtener_datos());
+	    var_dump($this->datos_model->obtener_datos());
+		$this->load->view('prueba', $data);
+        
 		
 		}
 

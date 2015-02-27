@@ -215,7 +215,7 @@ function Route(marker_pos) {
 
 jQuery(document).ready(function($) {
     $("#map").css({
-        'height': $(window).height() * 0.85 + 'px'
+        'height': $(window).height() * 0.20 + 'px'
     });
 });
 
